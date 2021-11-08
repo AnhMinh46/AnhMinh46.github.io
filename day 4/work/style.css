@@ -1,0 +1,51 @@
+.container {
+    height: 1000px;
+    background-color: bisque;
+    display: flex;
+    flex-direction: row;
+    justify-content: center ;
+    align-items: baseline;
+
+    flex-wrap: wrap;
+    align-content: center; 
+    
+}
+
+.container div {
+    
+    width: 200px;
+    height: 200px;
+    background-color:blueviolet;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
+
+    border: 1px solid #ccc;
+    font-size: 30px;
+    color: white;
+}
+
+.container div:first-child {
+    width: 500px;
+    order: 1;   
+    flex-shrink: 2;
+}
+
+.container div:first-child:hover {
+    background-color: yellow;
+    text-decoration: underline;
+}
+
+.container div:nth-child(2) {
+    width: 300px;
+    flex-shrink: 3;
+}
+
+.container div:nth-child(3) {
+    order: 1;
+    width: 400px;;
+}
+
+
